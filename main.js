@@ -3,8 +3,6 @@ const content = document.querySelector(".contenido");
 const body = document.body;
 
 // Establecer una variable para almacenar la posición actual del scroll
-let scrollPos = 0;
-let scrollAuxValue =0;
 let currentScrollPos = 0;
 
 //numero de puntos en el scroll
