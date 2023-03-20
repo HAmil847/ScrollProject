@@ -1,6 +1,10 @@
 // Seleccionar el elemento que contiene el contenido de la página
 const content = document.querySelector(".contenido");
 const body = document.body;
+const main = document.getElementById("unityContainer");
+
+//esperar antes de inciar
+
 
 // Establecer una variable para almacenar la posición actual del scroll
 let currentScrollPos = 0;
@@ -17,7 +21,7 @@ window.addEventListener("scroll", function() {
   let scrollPosition = window.pageYOffset;
 
   // Iterar sobre los elementos de sección y comprobar su posición
-  let ultimaPagina = 0;
+  let ultimaPagina = 1;
 
   for (let i = 1; i < secciones.length; i++) {
     let seccion = secciones[i];

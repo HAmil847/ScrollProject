@@ -8,3 +8,15 @@
     z-index: -1;
     pointer-events: all;
 }
+#unityContainer{
+    opacity: 0;
+    animation-name: carga;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(1,0,1,0);
+}
+ @keyframes carga{
+    from{opacity: 0;}
+    to{opacity: 1;}
+ }
