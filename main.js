@@ -3,6 +3,20 @@ const content = document.querySelector(".contenido");
 const body = document.body;
 const main = document.getElementById("unityContainer");
 
+
+var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Prueba de scrol.json", {onProgress: UnityProgress});
+function UnityProgress(unityInstance, progress) {
+    console.log("Progreso de carga: " + progress);
+    if(progress ==1 ){
+      main.style.animationName = "carga";
+      main.style.animationDuration = "5s";
+      main.style.animationIterationCount = "1";
+      main.style.animationFillMode = "forwards";
+      main.style.animationTimingFunction = "cubic-bezier(1,0,1,0)";
+    }
+}
+
+
 //esperar antes de inciar
 
 
