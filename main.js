@@ -36,7 +36,7 @@ window.addEventListener("scroll", function() {
 
       //se envia el indice
       //aqui llamar a unity
-      sendToUnity("elevator", "setModel", ultimaPagina);
+      sendToUnity("ASCENSORx v2", "setModel", ultimaPagina);
       //fin de la llamada a unity
       break;
     }
@@ -52,7 +52,7 @@ function sendToUnity(object, method, value) {
 }
 
 
-var unityTemp = UnityLoader.instantiate("unityContainer", "Build/Prueba de scrol.json", {onProgress: UnityProgress});
+var unityTemp = UnityLoader.instantiate("unityContainer", "Build/Final.json", {onProgress: UnityProgress});
 function UnityProgress(unityInstance, progress) {
     console.log("Progreso de carga: " + progress);
     if(progress ==1 ){
