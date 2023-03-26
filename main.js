@@ -52,7 +52,7 @@ function sendToUnity(object, method, value) {
 }
 
 
-var unityTemp = UnityLoader.instantiate("unityContainer", "Build/Prueba de scrol.json", {onProgress: UnityProgress});
+var unityTemp = UnityLoader.instantiate("unityContainer", "Build/FINAL V2.json", {onProgress: UnityProgress});
 function UnityProgress(unityInstance, progress) {
     console.log("Progreso de carga: " + progress);
     if(progress ==1 ){
